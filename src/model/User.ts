@@ -1,31 +1,30 @@
 import mongoose, { Schema, Document } from "mongoose";
-import {
-  email_validator,
-  password_validator,
-} from "../constants/regex_constants";
+import { email_validator } from "../constants/regex_constants";
 
-// export interface Message extends Document {
-//   content: string;
-//   createdAt: Date;
-// }
+export interface Message extends Document {
+  content: string;
+  createdAt: Date;
+}
 
-// const MessageSchema: Schema<Message> = new Schema({
-//   content: {
-//     type: String,
-//     required: true,
-//   },
-//   createdAt: {
-//     type: Date,
-//     required: true,
-//     default: Date.now,
-//   },
-// });
+const MessageSchema: Schema<Message> = new Schema({
+  content: {
+    type: String,
+    required: true,
+  },
+  createdAt: {
+    type: Date,
+    required: true,
+    default: Date.now,
+  },
+});
 
 export interface User extends Document {
   username: string;
   email: string;
   password: string;
   isCreator: boolean;
+  isVerified: boolean;
+  verifyCode: string;
 }
 
 const UserSchema: Schema<User> = new Schema({
@@ -53,6 +52,17 @@ const UserSchema: Schema<User> = new Schema({
     type: Boolean,
     required: true,
     default: false,
+  },
+
+  isVerified: {
+    type: Boolean,
+    required: true,
+    default: false,
+  },
+
+  verifyCode: {
+    type: String,
+    required: false,
   },
 });
 
