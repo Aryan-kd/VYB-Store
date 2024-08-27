@@ -7,6 +7,10 @@ import hero2 from "../../public/hero2.png";
 import hero3 from "../../public/hero3.png";
 import hero4 from "../../public/hero4.png";
 import heroGif from "../../public/1stGIF.gif";
+import work1 from "../../public/work1.gif";
+import work2 from "../../public/work2.gif";
+import work3 from "../../public/work3.gif";
+import work4 from "../../public/work4.gif";
 import menu_burger from "../../public/menu-burger.svg";
 import close_btn from "../../public/close.svg";
 import search_btn from "../../public/search.svg";
@@ -15,12 +19,20 @@ import dropupicon from "../../public/dropup_icon.svg";
 import leftarrow from "../../public/leftarrow.svg";
 import rightarrow from "../../public/rightarrow.svg";
 import productgif from "../../public/2ndGIF.gif";
+import authimage from "../../public/authimage.png";
 
 const Logo = () => {
   return (
-    <div className="flex justify-center items-center">
-      <Image priority={true} unoptimized={true} src={logo} alt="logo" />
-    </div>
+    <Image
+      priority={true}
+      unoptimized={true}
+      src={logo}
+      alt="logo"
+      style={{
+        width: "auto",
+        height: "auto",
+      }}
+    />
   );
 };
 
@@ -157,8 +169,8 @@ const LeftArrow = () => {
         src={leftarrow}
         alt="leftarrow"
         style={{
-          width: "50px",
-          height: "50px",
+          width: "30px",
+          height: "30px",
         }}
       />
     </div>
@@ -172,8 +184,8 @@ const RightArrow = () => {
         src={rightarrow}
         alt="rightarrow"
         style={{
-          width: "50px",
-          height: "50px",
+          width: "30px",
+          height: "30px",
         }}
       />
     </div>
@@ -182,6 +194,71 @@ const RightArrow = () => {
 
 const ProductGIF = () => {
   return <Image src={productgif} alt="productgif" />;
+};
+
+const WorkImage1 = () => {
+  return (
+    <Image
+      src={work1}
+      alt="workimage1"
+      style={{
+        width: "250.31px",
+        height: "534px",
+      }}
+    />
+  );
+};
+
+const WorkImage2 = () => {
+  return (
+    <Image
+      src={work2}
+      alt="workimage1"
+      style={{
+        width: "250.31px",
+        height: "534px",
+      }}
+    />
+  );
+};
+
+const WorkImage3 = () => {
+  return (
+    <Image
+      src={work3}
+      alt="workimage1"
+      style={{
+        width: "250.31px",
+        height: "534px",
+      }}
+    />
+  );
+};
+
+const WorkImage4 = () => {
+  return (
+    <Image
+      src={work4}
+      alt="workimage1"
+      style={{
+        width: "250.31px",
+        height: "534px",
+      }}
+    />
+  );
+};
+
+const AuthImage = () => {
+  return (
+    <Image
+      src={authimage}
+      alt="image"
+      style={{
+        width: "auto",
+        height: "auto",
+      }}
+    />
+  );
 };
 
 export {
@@ -199,4 +276,9 @@ export {
   LeftArrow,
   RightArrow,
   ProductGIF,
+  WorkImage1,
+  WorkImage2,
+  WorkImage3,
+  WorkImage4,
+  AuthImage,
 };

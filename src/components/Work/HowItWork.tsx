@@ -6,11 +6,11 @@ import WorkList from "./WorkList";
 const HowItWork = () => {
   return (
     <section className="min-h-[50vh] w-full py-5">
-      <div className="h-full w-full flex flex-wrap justify-center items-start">
-        <div className="h-fit w-[50vw] flex-1 flex justify-items-start justify-center items-center self-start sticky">
+      <div className="h-full w-full flex md:flex-row flex-col justify-center items-start gap-5 md:gap-0">
+        <div className="h-fit md:w-[40vw] w-[80vw] mx-auto flex justify-items-start justify-center items-center self-start sticky">
           <WorkBanner />
         </div>
-        <div className="h-full w-[50vw] flex-1 flex justify-center items-center">
+        <div className="h-full md:w-[50vw] w-[90vw] flex justify-center items-center">
           <WorkList />
         </div>
       </div>

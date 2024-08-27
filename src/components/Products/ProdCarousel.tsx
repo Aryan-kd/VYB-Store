@@ -8,7 +8,7 @@ const ProdCarousel = () => {
       <button className="w-fit rounded-full bg-green-950 flex justify-center items-center p-2">
         <LeftArrow />
       </button>
-      <div className="flex justify-center items-center object-contain object-center w-[70vw] h-auto rounded-lg overflow-hidden">
+      <div className="flex justify-center items-center object-contain object-center w-[80vw] h-auto rounded-lg overflow-hidden">
         <ProductGIF />
       </div>
       <button className="w-fit rounded-full bg-green-950 flex justify-center items-center p-2">
