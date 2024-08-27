@@ -29,11 +29,11 @@ const HeroImage = () => {
     },
   ];
   return (
-    <div className="flex justify-center items-center flex-wrap my-4 md:w-[80%] w-[90%] mx-auto gap-6 py-5 px-1 shadow border-2 rounded-xl">
+    <div className="flex justify-center items-center flex-wrap my-4 md:w-[80%] w-[95%] mx-auto gap-6 py-5 px-1 shadow-2xl rounded-xl">
       {heroDetails.map((details, index) => (
         <div
           key={index}
-          className="flex flex-col justify-center items-center flex-auto w-[200px] md:w-[180px] h-[200px] border-2 shadow-md rounded-xl py-4 px-3"
+          className="flex flex-col justify-center items-center flex-auto w-[200px] md:w-[180px] h-[200px] shadow-xl rounded-xl py-4 px-3"
         >
           {details.image}
           <h1 className="text-center font-bold text-xl">{details.title}</h1>

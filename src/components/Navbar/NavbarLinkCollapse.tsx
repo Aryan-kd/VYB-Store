@@ -12,7 +12,7 @@ const NavbarLinkCollapse = () => {
 
   return (
     <div
-      className={`absolute top-[130%] left-0 mx-auto min-w-[100%] w-auto rounded md:hidden bg-[#d6d6d6cc] py-5`}
+      className={`absolute top-[140%] left-0 mx-auto min-w-[100%] w-auto rounded md:hidden bg-glass py-5`}
     >
       <div className="flex flex-col justify-between items-center w-auto gap-4">
         <ul className="flex flex-col items-center justify-center gap-4 w-full">

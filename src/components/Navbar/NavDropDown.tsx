@@ -13,13 +13,13 @@ const NavDropDown = () => {
     <div className="relative flex flex-col items-center w-[150px] h-auto ">
       <button
         onClick={() => setDropnav(!dropnav)}
-        className="w-full py-2 px-4 flex justify-center items-center rounded-lg border-2"
+        className="w-full py-2 px-4 flex justify-center items-center rounded-lg border bg-tertiary-text"
       >
         Sign In
         {dropnav ? <DropUpIcon /> : <DropIcon />}
       </button>
       {dropnav && (
-        <div className="absolute top-[110%] flex flex-col items-start rounded-lg p-2 w-full border-2">
+        <div className="absolute top-[110%] flex flex-col items-start rounded-lg p-2 w-full bg-tertiary-text">
           {dropItems.map((drop, index) => (
             <Link href={drop.href} key={index} className="mx-auto">
               {drop.title}

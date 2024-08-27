@@ -7,6 +7,7 @@ import hero2 from "../../public/hero2.png";
 import hero3 from "../../public/hero3.png";
 import hero4 from "../../public/hero4.png";
 import heroGif from "../../public/1stGIF.gif";
+import heroGifmobile from "../../public/1stGIFmobile.gif";
 import work1 from "../../public/work1.gif";
 import work2 from "../../public/work2.gif";
 import work3 from "../../public/work3.gif";
@@ -20,6 +21,8 @@ import leftarrow from "../../public/leftarrow.svg";
 import rightarrow from "../../public/rightarrow.svg";
 import productgif from "../../public/2ndGIF.gif";
 import authimage from "../../public/authimage.png";
+import product1 from "../../public/product1.png";
+import product2 from "../../public/product2.png";
 
 const Logo = () => {
   return (
@@ -38,6 +41,20 @@ const Logo = () => {
 
 const HeroMainImage = () => {
   return <Image priority={true} unoptimized={true} src={heroGif} alt="gif" />;
+};
+
+const HeroMainMobile = () => {
+  return (
+    <Image priority={true} unoptimized={true} src={heroGifmobile} alt="gif" />
+  );
+};
+
+const ProductImage1 = () => {
+  return <Image src={product1} alt="product" />;
+};
+
+const ProductImage2 = () => {
+  return <Image src={product2} alt="product" />;
 };
 
 const HeroImage1 = () => {
@@ -264,6 +281,7 @@ const AuthImage = () => {
 export {
   Logo,
   HeroMainImage,
+  HeroMainMobile,
   HeroImage1,
   HeroImage2,
   HeroImage3,
@@ -281,4 +299,6 @@ export {
   WorkImage3,
   WorkImage4,
   AuthImage,
+  ProductImage1,
+  ProductImage2,
 };
