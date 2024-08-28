@@ -13,10 +13,10 @@ export default function AuthPageLayout({
       <div className="md:flex hidden justify-center items-center w-[40vw]">
         <Dashboard />
       </div>
-      <div className="md:hidden flex justify-center items-center w-[95vw]">
+      <div className="md:hidden flex justify-center items-center w-[95vw] mx-auto">
         <DashboardNav />
       </div>
-      <div className="flex justify-center items-center md:w-[60vw] w-[95vw]">
+      <div className="flex justify-center items-center md:w-[60vw] w-[95vw] mx-auto">
         {children}
       </div>
     </section>

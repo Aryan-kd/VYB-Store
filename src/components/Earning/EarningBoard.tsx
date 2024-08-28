@@ -35,7 +35,7 @@ const EarningBoard = () => {
           </h1>
           <input
             type="text"
-            className="w-3/4 h-[35px] rounded-lg outline-none px-2 py-1"
+            className="w-3/4 rounded-lg border border-secondary-text outline-none px-3 py-2 text-lg"
             placeholder="Select influencer type?"
           />
         </div>
@@ -50,7 +50,7 @@ const EarningBoard = () => {
             setValue={setFollower}
           />
           <div className="w-3/4">
-            <p className="mx-auto w-32 text-center px-4 py-2 bg-green-600 rounded-xl text-lg font-semibold">
+            <p className="mx-auto w-fit text-center px-5 py-2 bg-green-600 rounded-3xl text-lg font-semibold border border-secondary shadow-xl">
               {follower} K
             </p>
           </div>
@@ -66,7 +66,7 @@ const EarningBoard = () => {
             setValue={setProduct}
           />
           <div className="w-3/4">
-            <p className="mx-auto w-32 text-center px-4 py-2 bg-green-600 rounded-xl text-lg font-semibold">
+            <p className="mx-auto w-[90px] text-center px-4 py-2 bg-green-600 rounded-3xl text-lg font-semibold border border-secondary shadow-xl">
               {product}
             </p>
           </div>

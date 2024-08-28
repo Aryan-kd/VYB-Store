@@ -11,15 +11,16 @@ interface Props {
 
 const EarningSlider = ({ rangemin, rangemax, value, setValue }: Props) => {
   return (
-    <div className="w-full flex md:justify-start justify-center items-center">
+    <div className="relative w-[90%] flex md:justify-start justify-center items-center mr-auto">
       <input
         type="range"
         min={rangemin}
         max={rangemax}
-        className="w-3/4"
+        className="w-3/4 cursor-pointer z-20 "
         value={value}
         onChange={(e) => setValue(parseInt(e.target.value))}
       />
+      <div className="z-10 border-2 w-3/4 absolute"></div>
     </div>
   );
 };

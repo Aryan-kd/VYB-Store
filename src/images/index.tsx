@@ -27,6 +27,8 @@ import profilepic from "../../public/profile_pic.jpg";
 import coverimg from "../../public/cover-image.webp";
 import youtube from "../../public/youtube.png";
 import instagram from "../../public/instagram.png";
+import earning_graph from "../../public/earning-graph.png";
+import profile_icon from "../../public/profile-icon.png";
 
 const Logo = () => {
   return (
@@ -298,6 +300,14 @@ const InstagramIcon = () => {
   return <Image src={instagram} alt="instagram" />;
 };
 
+const EarningGraph = () => {
+  return <Image src={earning_graph} alt="graph" />;
+};
+
+const ProfileIcon = () => {
+  return <Image src={profile_icon} alt="profile" />;
+};
+
 export {
   Logo,
   HeroMainImage,
@@ -325,4 +335,6 @@ export {
   CoverPicture,
   YoutubeIcon,
   InstagramIcon,
+  EarningGraph,
+  ProfileIcon,
 };

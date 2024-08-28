@@ -1,10 +1,11 @@
 "use client";
 import React from "react";
-import { DropIcon, DropUpIcon } from "@/images";
+import { DropIcon, DropUpIcon, ProfileIcon } from "@/images";
 import Link from "next/link";
 
 const NavDropDown = () => {
   const [dropnav, setDropnav] = React.useState(false);
+  const [isLoggedIn, setIsLoggedIn] = React.useState(true);
   const dropItems = [
     { title: "Profile", href: "/profile" },
     { title: "Login", href: "/sign-in" },
@@ -13,9 +14,15 @@ const NavDropDown = () => {
     <div className="relative flex flex-col items-center w-[150px] h-auto ">
       <button
         onClick={() => setDropnav(!dropnav)}
-        className="w-full py-2 px-4 flex justify-center items-center rounded-lg border bg-tertiary-text"
+        className="py-2 px-4 flex justify-center items-center rounded-lg border bg-tertiary-text gap-3"
       >
-        Sign In
+        {isLoggedIn ? (
+          <div className="w-[15px] h-[15px] overflow-hidden rounded-full">
+            <ProfileIcon />
+          </div>
+        ) : (
+          "Sign Up"
+        )}
         {dropnav ? <DropUpIcon /> : <DropIcon />}
       </button>
       {dropnav && (
