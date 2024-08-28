@@ -24,7 +24,7 @@ const page = () => {
         <div className="w-full flex justify-center items-center">
           <span className="border border-gray-300 w-[30%]"></span>
           <p className="mx-2 w-fit text-center text-gray-300 font-semibold">
-            Don't Have Account
+            {`Don't Have Account`}
           </p>
           <span className="border border-gray-300 w-[30%]"></span>
         </div>
