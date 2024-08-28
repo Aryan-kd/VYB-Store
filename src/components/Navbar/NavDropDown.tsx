@@ -6,7 +6,7 @@ import Link from "next/link";
 const NavDropDown = () => {
   const [dropnav, setDropnav] = React.useState(false);
   const dropItems = [
-    { title: "Profile", href: "/" },
+    { title: "Profile", href: "/profile" },
     { title: "Login", href: "/sign-in" },
   ];
   return (

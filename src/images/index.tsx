@@ -23,6 +23,10 @@ import productgif from "../../public/2ndGIF.gif";
 import authimage from "../../public/authimage.png";
 import product1 from "../../public/product1.png";
 import product2 from "../../public/product2.png";
+import profilepic from "../../public/profile_pic.jpg";
+import coverimg from "../../public/cover-image.webp";
+import youtube from "../../public/youtube.png";
+import instagram from "../../public/instagram.png";
 
 const Logo = () => {
   return (
@@ -278,6 +282,22 @@ const AuthImage = () => {
   );
 };
 
+const ProfilePicture = () => {
+  return <Image src={profilepic} alt="profile" />;
+};
+
+const CoverPicture = () => {
+  return <Image src={coverimg} alt="cover" />;
+};
+
+const YoutubeIcon = () => {
+  return <Image src={youtube} alt="youtube" />;
+};
+
+const InstagramIcon = () => {
+  return <Image src={instagram} alt="instagram" />;
+};
+
 export {
   Logo,
   HeroMainImage,
@@ -301,4 +321,8 @@ export {
   AuthImage,
   ProductImage1,
   ProductImage2,
+  ProfilePicture,
+  CoverPicture,
+  YoutubeIcon,
+  InstagramIcon,
 };
