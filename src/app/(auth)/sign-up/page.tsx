@@ -1,5 +1,6 @@
 "use client";
 import RegisterForm from "@/components/Auth/RegisterForm";
+import { signIn } from "next-auth/react";
 import Link from "next/link";
 import React from "react";
 
@@ -9,7 +10,10 @@ const page = () => {
       <div className="w-[90vw] md:w-[50vw] h-full border-2 shadow-2xl rounded-xl p-2 flex flex-col justify-start items-center gap-1">
         <h1 className="text-2xl font-extrabold">Sign Up</h1>
         <div>
-          <button className="py-2 px-4 border-2 rounded-3xl font-bold">
+          <button
+            onClick={() => signIn("google")}
+            className="py-2 px-4 border-2 rounded-3xl font-bold"
+          >
             Google Register
           </button>
         </div>

@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { ProfilePicture } from "@/images";
 import DashboardNav from "./DashboardNav";
+import { signOut } from "next-auth/react";
 
 const Dashboard = () => {
   return (
@@ -19,12 +20,12 @@ const Dashboard = () => {
         <div className="w-full">
           <DashboardNav />
         </div>
-        <Link
-          href={"/"}
+        <button
+          onClick={() => signOut()}
           className="w-[60%] h-[40px] text-lg rounded-xl bg-dark-green text-transparent flex justify-center items-center font-bold border border-dark-green"
         >
           Logout
-        </Link>
+        </button>
       </div>
     </section>
   );

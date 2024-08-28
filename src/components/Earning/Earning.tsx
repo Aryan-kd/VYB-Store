@@ -10,7 +10,7 @@ const Earning = () => {
           ESTIMATE EARNING POTENTIAL
         </h1>
         <EarningBoard />
-        <button className="px-4 py-3 text-center bg-green-900 rounded-xl text-white">
+        <button className="px-4 py-3 text-center text-lg font-bold bg-dark-green rounded-xl text-transparent">
           Calculate
         </button>
       </div>

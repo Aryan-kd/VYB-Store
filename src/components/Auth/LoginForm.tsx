@@ -25,10 +25,7 @@ const LoginForm = () => {
   };
 
   return (
-    <form
-      className="w-[95%] md:w-[70%] flex flex-col justify-center items-center gap-3 my-2"
-      onSubmit={submitHandler}
-    >
+    <div className="w-[95%] md:w-[70%] flex flex-col justify-center items-center gap-3 my-2">
       <div className="w-full flex flex-col justify-start items-start">
         <label
           htmlFor="email-input"
@@ -70,12 +67,12 @@ const LoginForm = () => {
       <div>
         <button
           className="w-fit px-5 py-2 rounded-3xl border border-black focus:outline-none text-lg font-bold"
-          type="submit"
+          onClick={submitHandler}
         >
           Login
         </button>
       </div>
-    </form>
+    </div>
   );
 };
 

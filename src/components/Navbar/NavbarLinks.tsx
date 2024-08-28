@@ -2,8 +2,11 @@
 import React from "react";
 import Link from "next/link";
 import NavDropDown from "./NavDropDown";
+import { useSession } from "next-auth/react";
 
 const NavbarLinks = () => {
+  const { data: session } = useSession();
+
   const navLinks = [
     { title: "Cart", href: "/" },
     { title: "About", href: "/" },
@@ -19,8 +22,14 @@ const NavbarLinks = () => {
               <Link href={links.href}>{links.title}</Link>
             </li>
           ))}
+          {!session && (
+            <li>
+              <Link href={"/sign-in"}>Login</Link>
+            </li>
+          )}
         </ul>
-        <NavDropDown />
+
+        {session && <NavDropDown />}
       </div>
     </div>
   );
